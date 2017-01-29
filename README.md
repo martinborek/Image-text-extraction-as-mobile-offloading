@@ -1,5 +1,10 @@
 # Temerarious Thirteens - Project 2 for CSE-4100
 
+Project for the course "Mobile cloud computing", taken at Aalto University in 2016.
+
+
+
+
 ## How to start
 
 The application can be deployed with either of the following commands, run in the project root:
