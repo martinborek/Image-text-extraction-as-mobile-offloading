@@ -1,0 +1,8 @@
+tornado
+pymongo
+pytz
+Pillow
+pytesseract
+itsdangerous
+requests
+unidecode

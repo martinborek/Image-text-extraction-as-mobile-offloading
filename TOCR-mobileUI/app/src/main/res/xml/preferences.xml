@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="@string/server_pref"
+        android:key="server_ip"
+        android:defaultValue="@string/server_default_ip"
+        android:summary="@string/server_pref_summary"></EditTextPreference>
+    <ListPreference
+        android:key="records_amount"
+        android:entries="@array/recordsArray"
+        android:entryValues="@array/recordsArray"
+        android:defaultValue="@string/records_pref_default"
+        android:summary="@string/records_pref_summary"
+        android:title="@string/records_pref" />
+</PreferenceScreen>

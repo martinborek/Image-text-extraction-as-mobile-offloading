@@ -1,0 +1,78 @@
+Frontend sends two types of POST requests. URL /ocr/ initiates the remote OCR processing, and URL /upload/ is for
+uploading the images one at a time.
+
+First message for a new image or a batch of images is always to /ocr/. The request contains the following data:
+- URL: https://backend-ip/ocr/
+- content-type: multipart/form-data
+- form-data:
+    images_total: <number of images to process>
+
+The upload images request contains the following data:
+- URL: https://backend-ip/upload/
+- content-type: multipart/form-data
+- form-data:
+    uid: <UID received from backend>
+    seq: <the number of the image being uploaded>
+    image: <image file>
+
+
+Backend always responds with a JSON message. Status code is '200 OK', if nothing went wrong.
+{
+    "message": <informational message>,
+    "uid": <UID for the transaction>,
+    "next_seq": <next expected image number>,
+    "ocr_result": <result of the OCR processing, when all images have been uploaded>
+}
+
+
+For example:
+
+1. Frontend initiates remote OCR processing with a POST request:
+- URL: https://backend-ip/ocr/
+- form-data:
+    images_total: 2
+
+
+2. Backend responds with a JSON message, which contains the UID to use for uploads
+{
+    "message": "Ready for upload",
+    "uid": "583303a6df24120f10d28882",
+    "next_seq": 1,
+    "ocr_result": ""
+}
+
+
+3. Frontend sends first image with a POST request
+- URL: https://backend-ip/upload/
+- content-type: multipart/form-data
+- form-data:
+    uid: "583303a6df24120f10d28882"
+    seq: 1
+    image: <image file #1>
+
+
+4. Backend responds with a JSON message, which contains the next expected seq
+{
+    "message": "Image processed",
+    "uid": "583303a6df24120f10d28882",
+    "next_seq": 2,
+    "ocr_result": "",
+}
+
+
+5. Frontend sends second image with a POST request
+- URL: https://backend-ip/upload/
+- content-type: multipart/form-data
+- form-data:
+    uid: "583303a6df24120f10d28882"
+    seq: 2
+    image: <image file #2>
+
+
+6. Backend responds with a JSON message, which contains the OCR result from all images
+{
+    "message": "OCR finished",
+    "uid": "583303a6df24120f10d28882",
+    "next_seq": 0,
+    "ocr_result": "ABCDE\nFGH I J\nKLMNO\nPQRST\n...",
+}

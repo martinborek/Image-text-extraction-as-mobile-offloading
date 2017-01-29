@@ -1,0 +1,13 @@
+# Deploy backend in a GKE cluster
+sudo ./deploy.sh
+
+# Update Docker image running in the cluster
+cd server
+sudo ./update.sh
+
+# Delete backend cluster and containers
+cd server
+sudo ./undeploy.sh
+
+# Connect to kubernets pod's shell
+sudo kubectl exec <pod name> -i -t -- bash -il

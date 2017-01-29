@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Temerarious OCR</string>
+    <string name="login_title">Welcome</string>
+    <string name="login_info">Log In with your credentials or Facebook account</string>
+    <string name="username">Username</string>
+    <string name="log_in">Login</string>
+    <string name="password">Password</string>
+    <string name="response_error">There was an error in the response</string>
+    <string name="wrong_pass">Wrong Password</string>
+    <string name="authenticating">Authenticating...</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="select_mode">Select mode:</string>
+    <string name="select_source">Select source:</string>
+    <string name="status_no_image">No image selected, please choose from the gallery or take a picture using the icons above.</string>
+    <string name="status_img_camera">You have taken a picture with the camera. Ready to translate?</string>
+    <string name="status_img_gallery_1">You have selected</string>
+    <string name="status_img_gallery_2">image(s) from the gallery. Ready to translate?</string>
+    <string name="live_preview_link"><u>Preview your image(s)</u></string>
+    <string name="toast_no_images">No images selected!</string>
+    <string name="toast_no_source">Source image(s) missing!</string>
+    <string name="test_ocr">Run OCR!</string>
+    <string name="images">images</string>
+    <string name="show_records">Show records</string>
+    <string name="created_at">Created at:\n</string>
+    <string name="ocr_results"><u>OCR results</u></string>
+    <string name="take_new_pic">Retake picture</string>
+    <string name="not_from_camera">The image used was not from the camera!</string>
+    <string name="saved">Text file saved successfully!</string>
+    <string name="json_error">OCR could not translate your image properly</string>
+    <string name="facebook_app_id">349946252046985</string>
+
+    <!-- strings for the settings menu -->
+    <string name="app_settings">Application settings</string>
+    <string name="server_pref">Server address</string>
+    <string name="server_pref_summary">Enter the server IP. Be careful if you provide the wrong address the application will not work!</string>
+    <string name="server_default_ip">0.0.0.0</string>
+    <string name="records_pref">Number of records</string>
+    <string name="records_pref_summary">Define the amount of records you want to see in your records list.</string>
+    <string name="records_pref_default">5</string>
+
+    <!-- strings for the local mode -->
+    <string name="running_local_ocr">Translating images locally...</string>
+    <string name="local_ocr_error">An error occurred when running the OCR</string>
+
+    <!-- strings for the remote mode -->
+    <string name="remote_dialog">Preparing backend to receive images</string>
+    <string name="remote_failed">Something went wrong with the OCR in the server, sorry! :(</string>
+    <string name="uploading_images">Uploading images...</string>
+    <string name="no_records">No records found!</string>
+    <string name="getting_records">Loading...</string>
+
+    <!-- strings for the benchmark mode -->
+    <string name="running_benchmark">Running benchmark</string>
+    <string name="benchmark_error">Something went wrong in the benchmark...</string>
+    <string name="benchmark_results"><u>Benchmark results</u></string>
+    <string name="total_processed_images"><![CDATA[Total images processed:&nbsp;]]></string>
+    <string name="image_number"><![CDATA[* image #]]></string>
+    <string name="local_header"><![CDATA[<b>LOCAL</b> processing times:<br>]]></string>
+    <string name="remote_header"><![CDATA[<b>REMOTE</b> processing times:<br>]]></string>
+    <string name="data_header"><![CDATA[<b>DATA EXCHANGE</b> information:<br>]]></string>
+    <string name="total_time_of"><![CDATA[<b>TOTAL</b> time of&nbsp;]]></string>
+    <string name="average_time_of"><![CDATA[<b>AVERAGE</b> time of&nbsp;]]></string>
+    <string name="deviations_time_of"><![CDATA[<b>STANDARD DEVIATION</b> of&nbsp;]]></string>
+    <string name="minimum_time_of"><![CDATA[<b>MIN</b> time on image #]]></string>
+    <string name="maximum_time_of"><![CDATA[<b>MAX</b> time on image #]]></string>
+    <string name="total_data_of"><![CDATA[<b>TOTAL</b> data exchanged:&nbsp;]]></string>
+    <string name="average_data_of"><![CDATA[<b>AVERAGE</b> data exchanged:&nbsp;]]></string>
+    <string name="deviations_data_of"><![CDATA[<b>STANDARD DEVIATION</b> of&nbsp;]]></string>
+    <string name="minimum_data_of"><![CDATA[<b>MIN</b> data exchanged on image #]]></string>
+    <string name="maximum_data_of"><![CDATA[<b>MAX</b> data exchanged on image #]]></string>
+    <string name="seconds"><![CDATA[&nbsp;seconds<br>]]></string>
+    <string name="bytes"><![CDATA[&nbsp;kb<br>]]></string>
+    <string name="linebreak"><![CDATA[<br>]]></string>
+
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="ok">OK</string>
+    <string name="hello_user">Hello %1$s %2$s!</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Post ID: %1$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected&gt;</string>
+    <string name="no_place_selected">&lt;No place selected&gt;</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="save_file">Save File</string>
+    <string name="update">Click your profile image to return to OCR</string>
+    <string name="authentication_ok">Authenticated</string>
+    <string name="noInternet">Internet is OFF</string>
+    <string name="internet_off">Internet Connection is turned off. You can use the app only in Local mode</string>
+
+</resources>
