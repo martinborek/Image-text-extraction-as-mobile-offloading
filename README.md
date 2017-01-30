@@ -1,8 +1,8 @@
 # Temerarious Thirteens - Project 2 for CSE-4100
 
-Project for the course "Mobile cloud computing", taken at Aalto University in 2016.
+Project for the course "Mobile cloud computing", taken at Aalto University in 2016. Extracting text from images using Docker containers. Offloading from an Android device.
 
-
+Authors: Martin Borek, Fabiano Paiva Brito, Juho Kokko, Ivan Shabunin
 
 
 ## How to start
