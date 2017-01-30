@@ -1,6 +1,6 @@
-# Temerarious Thirteens - Project 2 for CSE-4100
+# Image text extraction as mobile offloading
 
-Project for the course "Mobile cloud computing", taken at Aalto University in 2016. Extracting text from images using Docker containers. Offloading from an Android device.
+Extracting text from images using Docker containers. Offloading from an Android device. Project for the course "Mobile cloud computing", taken at Aalto University in 2016.
 
 Authors: Martin Borek, Fabiano Paiva Brito, Juho Kokko, Ivan Shabunin
 
